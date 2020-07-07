@@ -10,9 +10,7 @@ var filesToCache = [
     './player.js',
     './p5.dom.min.js',
     './p5.min.js',
-    './p5.sound.min.js',
-    './assets/*',
-    './sprites/*'
+    './p5.sound.min.js'
 ];
 
 /* Start the service worker and cache all of the app's content */
