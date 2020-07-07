@@ -1,16 +1,16 @@
 var cacheName = 'mvj';
 var filesToCache = [
-    '/',
-    '/index.html',
-    '/style.css',
-    '/js/main.js',
-    '/sketch.js',
-    '/boss.js',
-    '/bullet.js',
-    '/enemy.js',
-    '/player.js',
-    '/assets/*',
-    '/sprites/*'
+    './',
+    './index.html',
+    './style.css',
+    './js/main.js',
+    './sketch.js',
+    './boss.js',
+    './bullet.js',
+    './enemy.js',
+    './player.js',
+    './assets/*',
+    './sprites/*'
 ];
 
 /* Start the service worker and cache all of the app's content */

@@ -44,7 +44,7 @@
         }
     ],
     "lang": "en-US",
-    "start_url": "/index.html",
+    "start_url": "./index.html",
     "display": "fullscreen",
     "orientation": "landscape",
     "background_color": "#515151",
