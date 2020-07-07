@@ -1,13 +1,25 @@
 var cacheName = 'mvj';
-var filesToCache = [
-    '*'
+var filesToCache = [    
+    './',
+    './index.html',
+    './style.css',
+    './js/main.js',
+    './sketch.js',
+    './boss.js',
+    './bullet.js',
+    './enemy.js',
+    './player.js',
+    './assets/*',
+    './sprites/*'
 ];
 
 /* Start the service worker and cache all of the app's content */
 self.addEventListener('install', function (e) {
     e.waitUntil(
         caches.open(cacheName).then(function (cache) {
-            return cache.addAll(filesToCache);
+            return cache.addAll(filesToCache)
+                .then(() => console.log('Assets added to cache'))
+                .catch(err => console.log('Error while fetching assets', err));
         })
     );
 });
